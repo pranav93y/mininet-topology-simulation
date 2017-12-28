@@ -5,7 +5,7 @@ CMPE 252A Final Project
 By Justin Lee & Pranav Yerabati
 
 ## Project Description
-Our project simuates two routing algorithms; Dijkstra's algorithm and ECMP (Equal Cost Multiple Paths), in a virtual Software-Defined Network topology. It creates a Fattree network (with K=4) using the [Mininet network simulator](http://mininet.org/), and uses the Python based [Pox SDN controller](http://www.brianlinkletter.com/using-the-pox-sdn-controller/). If mininet is used as a virtual machine, it needs to be configured such that SSHing from the host machine to the virtual machine is possible, which is decribed [here](http://mininet.org/vm-setup-notes/). 
+Our project simuates two routing algorithms; Dijkstra's algorithm and ECMP (Equal Cost Multiple Paths), in a virtual Software-Defined Network topology. It creates a Fattree network (with K=4) using the [Mininet network simulator](http://mininet.org/), and uses the Python based [Pox SDN controller](http://www.brianlinkletter.com/using-the-pox-sdn-controller/). If mininet is used as a virtual machine, it needs to be configured such that SSHing from the host machine to the virtual machine is possible, which is decribed [here](http://mininet.org/vm-setup-notes/). Also, the academic paper on the Fattree network topology which we tried to recreate can be found [here](http://ccr.sigcomm.org/online/files/p63-alfares.pdf). 
 
 
 
