@@ -1,14 +1,16 @@
 # Topology-mini
 Final Project for CMPE 252 building Clos tree, Jellyfish, and S2 networking topologies.
 
-CMPE 252 Final Project
+CMPE 252A Final Project
 Implementing a FatTree topology and corresponding routing protocols:
 
 By Justin Lee & Pranav Yerabati
 
+
+
 # Instructions to Run
 
-Our project requires two separate shell console windows to run; one for the controller and one for the network topology (mininet). We had issues with the switches connecting with the controller through the same script (as it was in the original mn_ft.py script given), therefore we decided to split and create out own bash scripts to run. Our project requires 4 bash scripts to run; 2 for the controller and 2 for the network topology. 
+Our project requires two separate shell console windows to run; one for the controller and one for the network topology (mininet). Our project requires 4 bash scripts to run; 2 for the controller and 2 for the network topology. These bash scripts are located in the scripts directory:
 
 Controller Bash Scripts:
 controller_dij.sh
@@ -18,27 +20,19 @@ Network Topology (Mininet) Bash Scripts:
 run_dij.sh
 run_ecmp.sh
 
-#To test Dijkstras:
-On one shell windows, run: sudo sh controller_dij.sh
+# To test Dijkstras:
+On one shell, run: sudo sh controller_dij.sh
 On the other, run: sudo sh run_dij.sh
 
-#To test ECMP
-On one shell windows, run: sudo sh controller_ecmp.sh
+# To test ECMP
+On one shell, run: sudo sh controller_ecmp.sh
 On the other, run: sudo sh run_ecmp.sh
 
-Iperf was used to generate traffic through the network, and its output will be saved in Topology-mini/mininet_fattree_exp-code_skeleton/results/fattree-{dij/ecmp}/{input-file-name}/data
+Iperf was used to generate traffic through the network, and its output will be saved in lib/results/fattree-{dij/ecmp}/{input-file-name}/data
 
 # Network Topology Plot
-We provided a plot we have generated using the python library matplotlib to plot our fat-tree topology. The file is named fattree_topo.png
-
-
-# Known Issues/Errors
-
-1. Iperf Connection Failed: This is seen some times as the output for the iperf client, however we believe it must be due to how iperf not closing the connection properly. We tested multiple times by opening xterm windows on those hosts, and we were not able to find an error. 
-
-2. We were not able to call the controller in mn_ft.py, as the switches would not connect. Therefore we implemented own own bash scripts to run the controller and mininet in separate shell windows. 
-
-3. We were not able to implement two level routing 
+We provided a plot we have generated using the python library matplotlib to plot our fat-tree topology. The file is named fattree_topo.png:
+![Alt text](./fattree_topo.png?raw=true "Title")
 
 
 # Project Summary/Description
@@ -57,3 +51,9 @@ Finally, we built a separate script to evaluate each routing scheme using Iperf 
 
 In conclusion, we spent multiple weeks and countless hours adding functions and modifying the provided skeleton code. We really enjoyed understanding how to create a given topology and use a SDN controller. 
 
+
+# Known Issues/Errors
+
+1. Iperf Connection Failed: This is seen some times as the output for the iperf client, however we believe it must be due to how iperf not closing the connection properly. We tested multiple times by opening xterm windows on those hosts, and we were not able to find an error. 
+
+2. We were not able to call the controller in mn_ft.py, as the switches would not connect. Therefore we implemented own own bash scripts to run the controller and mininet in separate shell windows. 
