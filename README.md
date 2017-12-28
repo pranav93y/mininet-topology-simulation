@@ -13,18 +13,18 @@ By Justin Lee & Pranav Yerabati
 Our project requires two separate shell console windows to run; one for the controller and one for the network topology (mininet). Our project requires 4 bash scripts to run; 2 for the controller and 2 for the network topology. These bash scripts are located in the scripts directory:
 
 Controller Bash Scripts:
-controller_dij.sh
-controller_ecmp.sh
+- controller_dij.sh
+- controller_ecmp.sh
 
 Network Topology (Mininet) Bash Scripts:
-run_dij.sh
-run_ecmp.sh
+- run_dij.sh
+- run_ecmp.sh
 
-# To test Dijkstras:
+## To test Dijkstras:
 On one shell, run: sudo sh controller_dij.sh
 On the other, run: sudo sh run_dij.sh
 
-# To test ECMP
+## To test ECMP
 On one shell, run: sudo sh controller_ecmp.sh
 On the other, run: sudo sh run_ecmp.sh
 
