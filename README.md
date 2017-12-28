@@ -21,18 +21,18 @@ Network Topology (Mininet) Bash Scripts:
 - run_ecmp.sh
 
 ## To test Dijkstras:
-On one shell, run: sudo sh controller_dij.sh
-On the other, run: sudo sh run_dij.sh
+- On one shell, run: sudo sh controller_dij.sh
+- On the other, run: sudo sh run_dij.sh
 
 ## To test ECMP
-On one shell, run: sudo sh controller_ecmp.sh
-On the other, run: sudo sh run_ecmp.sh
+- On one shell, run: sudo sh controller_ecmp.sh
+- On the other, run: sudo sh run_ecmp.sh
 
 Iperf was used to generate traffic through the network, and its output will be saved in lib/results/fattree-{dij/ecmp}/{input-file-name}/data
 
 # Network Topology Plot
 We provided a plot we have generated using the python library matplotlib to plot our fat-tree topology. The file is named fattree_topo.png:
-![Alt text](./fattree_topo.png?raw=true "Title")
+![Alt text](./fattree_topo.png?raw=true "Fattree Topology Plot")
 
 
 # Project Summary/Description
