@@ -1,10 +1,11 @@
-# Topology-mini
+# Mininet-Topology-Simulation
 Final Project for CMPE 252 building Clos tree, Jellyfish, and S2 networking topologies.
 
 CMPE 252A Final Project
-Implementing a FatTree topology and corresponding routing protocols:
-
 By Justin Lee & Pranav Yerabati
+
+## Project Description
+Our project simuates two routing algorithms; Dijkstra's algorithm and ECMP (Equal Cost Multiple Paths), in a virtual Software-Defined Network topology. It creates a Fattree network (with K=4) using the [Mininet network simulator](http://mininet.org/), and uses the Python based [Pox SDN controller](http://www.brianlinkletter.com/using-the-pox-sdn-controller/). If mininet is used as a virtual machine, it needs to be configured such that SSHing from the host machine to the virtual machine is possible, which is decribed [here](http://mininet.org/vm-setup-notes/). 
 
 
 
@@ -35,7 +36,7 @@ We provided a plot we have generated using the python library matplotlib to plot
 ![Alt text](./fattree_topo.png?raw=true "Fattree Topology Plot")
 
 
-# Project Summary/Description
+# Project Summary
 
 The goal of this final project was to implement a simulation of a  Fat Tree / Clos topology for a data center network in Mininet with various routing protocols. We build a software defined networking (SDN) network using simulated switches with an SDN controller. The main structure of the code was designed based on Ripl-POX (https://github.com/brandonheller/riplpox, a library for POX). Our public repository for this project can be found at Topology-mini (https://github.com/lejuste/Topology-mini). 
 
